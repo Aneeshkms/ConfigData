@@ -1,0 +1,7 @@
+{
+    "subject" : ["She","It","Tommy","I","They","He"],
+    "verb" : ["sneeze","jump","bark","study"],
+    "article" : ["a","an","the"],
+    "adjective" : ["able","acid","angry","automatic","beautiful","black","boiling","bright","broken","brown","cheap","chemical","chief","clean","clear"],
+    "noun" : ["house","dress","dress","baby"]
+}
