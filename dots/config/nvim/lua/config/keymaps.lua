@@ -24,6 +24,12 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Half page up (centered)" })
 
 vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without yanking" })
 vim.keymap.set({ "n", "v" }, "<leader>x", '"_d', { desc = "Delete without yanking" })
+-- Consider below
+-- Copy to system clipboard using Leader + y
+vim.keymap.set({'n', 'v'}, '<leader>Y', '"+y', { desc = "Copy to system clipboard" })
+-- Paste from system clipboard using Leader + p
+vim.keymap.set({'n', 'v'}, '<leader>P', '"+p', { desc = "Paste from system clipboard" })
+
 
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>", { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>bp", ":bprevious<CR>", { desc = "Previous buffer" })

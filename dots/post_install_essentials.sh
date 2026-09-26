@@ -6,7 +6,7 @@ echo "Updating mirrorlist . . ." && sleep 1
 sudo pacman -S reflector
 sudo reflector --country India --country Singapore --sort rate --save /etc/pacman.d/mirrorlist
 # echo "-~-~-~-~-~-~-~-~-~-~Installing amd-ucode " && sleep 1
-# sudo pacman -S --needed amd-ucode 
+# sudo pacman -S --needed amd-ucode
 # For NVIDIA set below env vars
 # export LIBVA_DRIVER_NAME='nvidia'
 # export __GLX_VENDOR_LIBRARY_NAME='nvidia'
@@ -55,10 +55,10 @@ echo "alias vi='nvim' " >> ~/.bashrc
 echo "set -o vi " >> ~/.bashrc
 source ~/.bashrc
 echo "-~-~-~-~-~-~-~-~-~-~Install nerd fonts" && sleep 1
-# See if below needed or not 
+# See if below needed or not
 # System & Monospace Fonts: ttf-inter (clean UI font) or ttf-jetbrains-mono.
 # The Icons (Crucial for Waybar): ttf-nerd-fonts-symbols or a specific patched font like ttf-jetbrains-mono-nerd.
-# Emojis: noto-fonts-emoji so browsers and chat apps don't crash or look blank when displaying emojis. 
+# Emojis: noto-fonts-emoji so browsers and chat apps don't crash or look blank when displaying emojis.
 #
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Inconsolata.zip
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
@@ -80,7 +80,7 @@ sudo pacman -S --needed wlogout # TODO configuration and styling
 echo "-~-~-~-~-~-~-~-~-~-~Installing notification/" && sleep 1
 sudo pacman -S --needed swaync   # TODO  configure swaync
 echo "-~-~-~-~-~-~-~-~-~-~Installing screenshot / swappy for screenshot editing" && sleep 1
-sudo pacman -S --needed grim slurp swappy  
+sudo pacman -S --needed grim slurp swappy
 # TODO grim captures screen, slurp helps to select, swappy helps to do minimal edit
 # Configure these in hyprland
 echo "-~-~-~-~-~-~-~-~-~-~Installing wl-clipboard for clipboard wl-copy and wl-paste" && sleep 1
@@ -110,3 +110,8 @@ yay -S brave-bin
 # Install and configure timeshift
 # Explore - Smart Memory Management (ZRAM / Swap)
 # sudo pacman -S zram-generator
+#
+# MINT Post install
+# cat post_install_essentials.sh | grep -A 10 'MINT Post install' | sed 's/^# //'
+# sudo apt install lf yazi firefox qutebrowser
+
